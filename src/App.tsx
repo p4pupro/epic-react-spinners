@@ -1,25 +1,92 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Atom } from './spinners/atom/Atom';
+import { Orbit } from './spinners/orbit/Orbit';
+import { Trinity } from './spinners/trinity/Trinity';
+import { Electron } from './spinners/electron/Electron';
+import { Square } from './spinners/squares/Squares';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="main-container">
+  <div className="title-holder">
+    <h1 className="header">React Epic Spinners</h1>
+    <h5 className="sub-header">React Implementation of
+      <a className="link" href="http://epic-react-spinners.es/" target="_blank" rel="noreferrer"> Epic Spinners
+      </a>
+    </h5>
+
+    <div className="get-started">
+      <div className="get-started__docs">
+        <h4>Get started</h4>
+        <a href="https://github.com/p4pupro/epic-react-spinners" className="docs">Docs</a>
+      </div>
+      <div className="get-started-code">
+        <p>npm install epic-react-spinners</p>
+        <p>yarn add epic-react-spinners</p>
+      </div>
     </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Atom color="#61dafb" size="70" animationDuration="2"></Atom>
+    </div>
+    <div className="name">
+      Atom Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Orbit color="#61dafb" size="70" animationDuration="2"></Orbit>
+    </div>
+    <div className="name">
+      Orbit Spinner
+    </div>
+  </div>
+  
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Trinity color="#61dafb" size="70" animationDuration="2"></Trinity>
+    </div>
+    <div className="name">
+      Trinity Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Electron color="#61dafb" size="70" animationDuration="2"></Electron>
+    </div>
+    <div className="name">
+      Electron Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Square color="#61dafb" size="70" animationDuration="2"></Square>
+    </div>
+    <div className="name">
+      Squares Spinner
+    </div>
+  </div>
+
+  </div>
+
+<footer>
+  <h4>By
+    <a href="https://github.com/p4pupro" className="link"> @p4pupro</a>
+  </h4>
+  <p>This project is an implementation of the
+    <a href="https://github.com/p4pupro/epic-spinners" target="_blank" rel="noreferrer" className="link"> Epic Spinners</a> project created by
+    <a href="https://github.com/p4pupro" target="_blank" rel="noreferrer" className="link"> p4pupro</a>
+  </p>
+</footer>
+</>
+   
   );
 }
 
