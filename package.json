@@ -1,7 +1,7 @@
 {
   "name": "epic-react-spinners",
   "description": "React implementation of epic spinners",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "keywords": ["React", "TypeScript", "Spinners"],
   "author": "Domingo Pérez <p4pupro@gmail.com> (https://github.com/p4pu)",

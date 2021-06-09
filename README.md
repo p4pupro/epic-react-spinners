@@ -1,4 +1,4 @@
-# React Epic Spinners
+# Epic React Spinners
 
 Reusable react components for epic spinners
 
@@ -37,12 +37,11 @@ function App() {
 }
 ```
 
-Support?
-Star the repo ⭐️
-Create pull requests
-Follow me on twitter [*@Papu62*](https://twitter.com/Papu62)
-License
-MIT license.
+Support? :coffee: *separate paragraph*
+Star the repo ⭐️ *separate paragraph*
+Pull requests are welcome :sparkles: *separate paragraph*
+Follow me on twitter :hash: [*@Papu62*](https://twitter.com/Papu62)
+License :copyright: MIT license.
 
 Keywords
     React TypeScript Spinners
