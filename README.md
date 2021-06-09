@@ -37,10 +37,14 @@ function App() {
 }
 ```
 
-Support? :coffee: *separate paragraph*
-Star the repo ⭐️ *separate paragraph*
-Pull requests are welcome :sparkles: *separate paragraph*
+Support? :coffee:
+
+Star the repo ⭐️
+
+Pull requests are welcome :sparkles:
+
 Follow me on twitter :hash: [*@Papu62*](https://twitter.com/Papu62)
+
 License :copyright: MIT license.
 
 Keywords
