@@ -1,7 +1,11 @@
 {
-  "name": "spinners",
-  "version": "0.1.0",
+  "name": "epic-react-spinners",
+  "description": "React implementation of epic spinners",
+  "version": "1.0.0",
   "private": true,
+  "keywords": ["React", "TypeScript", "Spinners"],
+  "author": "Domingo Pérez <p4pupro@gmail.com> (https://github.com/p4pu)",
+  "license": "MIT",
   "homepage": "https://p4pupro.github.io/epic-react-spinners",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
