@@ -1,7 +1,7 @@
 {
   "name": "epic-react-spinners",
   "description": "React implementation of epic spinners",
-  "version": "1.0.5",
+  "version": "1.0.10",
   "private": false,
   "keywords": [
     "React",
@@ -11,6 +11,10 @@
   "author": "Domingo Pérez <p4pupro@gmail.com> (https://github.com/p4pu)",
   "license": "MIT",
   "homepage": "https://p4pupro.github.io/epic-react-spinners",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p4pupro/epic-react-spinners"
+  },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -69,5 +73,8 @@
     "node-sass": "4.14",
     "sass-loader": "^12.0.0",
     "style-loader": "^2.0.0"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.11"
   }
 }

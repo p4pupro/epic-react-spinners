@@ -10,7 +10,7 @@ Visit the demo [demo](https://p4pupro.github.io/epic-react-spinners/) page to se
 
 OR
 
-``` yarn install epic-react-spinners ```
+``` yarn add epic-react-spinners ```
 
 ## Usage
 Example
@@ -20,11 +20,7 @@ Import each spinners' into your file/component and use the spinner component any
 ```javascript
 import React from 'react';
 import './App.scss';
-import { Atom } from './spinners/atom/Atom';
-import { Orbit } from './spinners/orbit/Orbit';
-import { Trinity } from './spinners/trinity/Trinity';
-import { Electron } from './spinners/electron/Electron';
-import { Square } from './spinners/squares/Squares';
+import {Atom, Electron, Orbit, Square, Trinity} from 'epic-react-spinners';
 
 function App() {
   return (
