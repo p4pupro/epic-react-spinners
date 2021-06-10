@@ -1,7 +1,7 @@
 {
   "name": "epic-react-spinners",
   "description": "React implementation of epic spinners",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "private": false,
   "keywords": [
     "React",
@@ -69,5 +69,8 @@
     "node-sass": "4.14",
     "sass-loader": "^12.0.0",
     "style-loader": "^2.0.0"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.11"
   }
 }
