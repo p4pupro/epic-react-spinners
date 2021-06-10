@@ -1,4 +1,3 @@
-import React from 'react';
 import { Trinity } from './Trinity';
 
 describe('Trinity Spinner', () => {

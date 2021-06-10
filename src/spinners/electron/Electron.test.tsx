@@ -1,4 +1,3 @@
-import React from 'react';
 import { Electron } from './Electron';
 
 describe('Electron Spinner', () => {
