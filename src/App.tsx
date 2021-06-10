@@ -1,10 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { Atom } from './spinners/atom/Atom';
-import { Orbit } from './spinners/orbit/Orbit';
-import { Trinity } from './spinners/trinity/Trinity';
-import { Electron } from './spinners/electron/Electron';
-import { Square } from './spinners/squares/Squares';
+import { Atom, Orbit, Trinity, Electron, Square } from './spinners/index';
 
 function App() {
   return (
