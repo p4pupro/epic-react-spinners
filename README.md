@@ -10,7 +10,7 @@ Visit the demo [demo](https://p4pupro.github.io/epic-react-spinners/) page to se
 
 OR
 
-``` yarn install epic-react-spinners ```
+``` yarn add epic-react-spinners ```
 
 ## Usage
 Example
