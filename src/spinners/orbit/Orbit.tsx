@@ -1,4 +1,3 @@
-import React from 'react';
 import { Spinner } from '../../utils/interfaces/Spinner';
 import { OrbitSpinner, OrbitLine } from './style';
 export const Orbit = (props: Spinner) => {

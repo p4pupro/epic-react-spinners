@@ -1,4 +1,3 @@
-import React from 'react';
 import { Spinner } from '../../utils/interfaces/Spinner';
 import { SpinnerCircle, SpinnerLine, AtomSpinner, AtomSpinnerInner } from './style';
 

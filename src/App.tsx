@@ -1,15 +1,15 @@
-import React from 'react';
+
 import './App.scss';
-import { Atom, Orbit, Trinity, Electron, Square } from './spinners/index';
+import { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Radar } from './spinners/index';
 
 function App() {
   return (
     <>
     <div className="main-container">
   <div className="title-holder">
-    <h1 className="header">React Epic Spinners</h1>
+    <h1 className="header">Epic React Spinners</h1>
     <h5 className="sub-header">React Implementation of
-      <a className="link" href="http://epic-react-spinners.es/" target="_blank" rel="noreferrer"> Epic Spinners
+      <a className="link" href="https://epic-spinners.epicmax.co/" target="_blank" rel="noreferrer"> Epic Spinners
       </a>
     </h5>
 
@@ -64,6 +64,24 @@ function App() {
   <div className="spinner-holder">
     <div className="spinner-element">
       <Square color="#61dafb" size="70" animationDuration="2"></Square>
+    </div>
+    <div className="name">
+      Squares Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <SelfSquare color="#61dafb" size="70" animationDuration="1.4"/>
+    </div>
+    <div className="name">
+      Squares Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Radar color="#61dafb" size="70" animationDuration="2"/>
     </div>
     <div className="name">
       Squares Spinner

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Spinner } from '../../utils/interfaces/Spinner';
 import { ElectronSpinner, ElectronLine } from './style';
 export const Electron = (props: Spinner) => {

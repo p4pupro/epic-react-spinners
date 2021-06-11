@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Spinner } from '../../utils/interfaces/Spinner';
 import {TrinitySpinner, TrinityCircle } from './style';
 export const Trinity = (props: Spinner) => {
