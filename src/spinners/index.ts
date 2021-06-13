@@ -5,5 +5,6 @@ import { Electron } from './electron/Electron';
 import { Square } from './squares/Squares';
 import { SelfSquare } from './self-square/SelfSquare';
 import { Radar } from './radar/Radar';
+import { Rhombuses } from './rhombuses/Rhombuses';
 
-export { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Radar };
+export { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Radar, Rhombuses };

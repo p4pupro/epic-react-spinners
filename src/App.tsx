@@ -1,6 +1,6 @@
 
 import './App.scss';
-import { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Radar } from './spinners/index';
+import { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Radar, Rhombuses } from './spinners/index';
 
 function App() {
   return (
@@ -75,16 +75,25 @@ function App() {
       <SelfSquare color="#61dafb" size="70" animationDuration="1.4"/>
     </div>
     <div className="name">
-      Squares Spinner
+      SelfSquare Spinner
     </div>
   </div>
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Radar color="#61dafb" size="70" animationDuration="2"/>
+      <Radar color="#61dafb" size="70" animationDuration="1.2"/>
     </div>
     <div className="name">
-      Squares Spinner
+      Radar Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Rhombuses color="#61dafb" size="15" animationDuration="1.2"/>
+    </div>
+    <div className="name">
+      Rhombuses Spinner
     </div>
   </div>
 
