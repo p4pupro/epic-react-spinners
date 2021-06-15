@@ -17,18 +17,25 @@ Example
 
 Import each spinners' into your file/component and use the spinner component anywhere.
 
+```color, size, animationDuration ``` are props optional, by default it have values. 
+
 ```javascript
 import React from 'react';
 import './App.scss';
-import {Atom, Electron, Orbit, Square, Trinity} from 'epic-react-spinners';
+import {Atom, Orbit, Trinity, Electron, Square, SelfSquare, Rhombuses, Flower, HalfCircle, FingerPrint} from 'epic-react-spinners';
 
 function App() {
   return (
-    <Atom color="#61dafb" size="70" animationDuration="2" />
-    <Orbit color="#61dafb" size="70" animationDuration="2" />
-    <Trinity color="#61dafb" size="70" animationDuration="2" />
-    <Electron color="#61dafb" size="70" animationDuration="2" />
-    <Square color="#61dafb" size="70" animationDuration="2" />
+    <Atom color="#61dafb" size="70" animationDuration="2000" />
+    <Orbit color="#61dafb" size="70" animationDuration="2000" />
+    <Trinity color="#61dafb" size="70" animationDuration="2000" />
+    <Electron color="#61dafb" size="70" animationDuration="2000" />
+    <Square color="#61dafb" size="70" animationDuration="2000" />
+    <SelfSquare color="#61dafb" size="70" animationDuration="2000" />
+    <Rhombuses color="#61dafb" size="70" animationDuration="2000" />
+    <Flower color="#61dafb" size="70" animationDuration="2000" />
+    <HalfCircle color="#61dafb" size="70" animationDuration="2000" />
+    <FingerPrint color="#61dafb" size="70" animationDuration="2000" />
   )
 }
 ```
