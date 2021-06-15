@@ -1,6 +1,6 @@
 
 import './App.scss';
-import { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Radar, Rhombuses } from './spinners/index';
+import { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Rhombuses, Flower, HalfCircle, FingerPrint } from './spinners/index';
 
 function App() {
   return (
@@ -81,10 +81,10 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Radar color="#61dafb" size="70" animationDuration="1.2"/>
+      <Flower color="#61dafb" size="70" animationDuration="2"/>
     </div>
     <div className="name">
-      Radar Spinner
+      Flower Spinner
     </div>
   </div>
 
@@ -96,6 +96,35 @@ function App() {
       Rhombuses Spinner
     </div>
   </div>
+  
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <HalfCircle color="#61dafb" size="70" animationDuration="1.4"/>
+    </div>
+    <div className="name">
+     Half Circle Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <FingerPrint color="#61dafb" size="70" animationDuration="1400"/>
+    </div>
+    <div className="name">
+      FingerPrint Spinner
+    </div>
+  </div>
+
+  {/* <div className="spinner-holder">
+    <div className="spinner-element">
+      <Radar color="#61dafb" size="70" animationDuration="1.2"/>
+    </div>
+    <div className="name">
+      Radar Spinner
+    </div>
+  </div> */}
+  
 
   </div>
 

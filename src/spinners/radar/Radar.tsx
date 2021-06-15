@@ -11,15 +11,13 @@ export const Radar = (props: Spinner) => {
     return len * 5 / 110;
   }
   const getSize = (): string => {
-    const len = size ? size+'px' : '70px';
-    return len;
+    return  size ? size+'px' : '70px';
   }
 
   const circleStyle = (): string => {
     const long = animationDuration ? parseFloat(animationDuration) : 1.2;
     const longInMs = long * 1000;
-    const duration = longInMs.toString() || '1200';
-    return duration;
+    return longInMs.toString() || '1200';
   }
 
   const circlesStyles = (): [] => {
@@ -41,7 +39,6 @@ export const Radar = (props: Spinner) => {
     <RadarSpinner style={{ height: getSize(), width: getSize() }}>
         {
             circlesStyles().map((style: any, i: number) => {
-              console.log(style)
               return (
                   <CircleSpinner key={i} style={{ 
                     padding: style.padding, 

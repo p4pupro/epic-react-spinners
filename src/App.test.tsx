@@ -1,11 +1,10 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
 describe('Page App', () => {
   it('renders header', () => {
     render(<App />);
-    const headerElement = screen.getByText(/React Epic Spinners/i);
+    const headerElement = screen.getByText(/Epic React Spinners/i);
     expect(headerElement).toBeInTheDocument();
   })
 
