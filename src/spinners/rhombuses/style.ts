@@ -29,7 +29,7 @@ const Rhombus = styled.div`
     border-radius: 2px;
     transform: translateY(0) rotate(45deg) scale(0);
     animation-name: ${rhombusesSpinnerAnimation};
-    animation-duration: ${props => props.style?.animationDuration}s;
+    animation-duration: ${props => props.style?.animationDuration}ms;
     animation-delay: ${props => props.style?.animationDelay}ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 

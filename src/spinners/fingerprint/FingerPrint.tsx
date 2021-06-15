@@ -13,18 +13,10 @@ export const FingerPrint = (props: Spinner) => {
     return len - containerPadding * 2;
   }
 
-  const spinnerStyle = (): object => {
-    return {
-      height: `${size || defaulValues.size}px`,
-      width: `${size || defaulValues.size}px`,
-      padding: `${containerPadding}px`
-    };
-  }
-
   const ringStyle = (): object => {
     return {
       borderTopColor: color || defaulValues.color,
-      animationDuration: `${animationDuration || defaulValues.animationDuration}ms`
+      animationDuration: `${animationDuration || defaulValues.animationDuration}`
     };
   }
 
@@ -46,7 +38,7 @@ export const FingerPrint = (props: Spinner) => {
 
 
   return (
-    <FingerPrintSpinner style={spinnerStyle()}>
+    <FingerPrintSpinner style={{ height: size || defaulValues.size, width: size || defaulValues.size, padding: containerPadding }}>
         {
             ringsStyles().map((style, i: number) => {
                 return(

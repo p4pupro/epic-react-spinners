@@ -22,53 +22,53 @@ const selfSquareSpinnerAnimation = keyframes`
 const SquareSpinner = styled.div`
     height: ${props => props.style?.height}px;
     width: ${props => props.style?.width}px;
-    top: calc( -10px * 2 / 3);
+    top: ${props => props.style?.top}px;
 `
 
 const Squares = styled.div`
-    height: 18px;
-    width: 18px;
-    top: calc( -10px * 2 / 3);
-    margin-right: calc(10px / 3);
-    margin-top: calc(10px / 3);
-    background: ${props => props.style?.color};
+    height: ${props => props.style?.height}px;
+    width: ${props => props.style?.width}px;
+    top: ${props => props.style?.top};
+    margin-right: ${props => props.style?.marginRight};
+    margin-top: ${props => props.style?.marginTop};
+    background: ${props => props.style?.background};
     float: left;
     position:relative;
     opacity: 0;
     animation: ${selfSquareSpinnerAnimation};  
-    animation-duration: ${props => props.itemProp ? props.itemProp : '1.4'}s;
+    animation-duration: ${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite;
+    animation-delay: ${props => props.style?.animationDelay}; 
 
     &:nth-child(1) {
-        animation-delay: calc(300ms * 6);  
+        animation-delay: ${props => props.style?.animationDelay};  
     }
     &:nth-child(2) {
-        animation-delay: calc(300ms * 7); 
+        animation-delay: ${props => props.style?.animationDelay}; 
     }
     &:nth-child(3) {
-        animation-delay: calc(300ms * 8);  
+        animation-delay: ${props => props.style?.animationDelay};  
     }
     &:nth-child(4) {
-        animation-delay: calc(300ms * 3);
+        animation-delay: ${props => props.style?.animationDelay};
     }
     &:nth-child(5) {
-        animation-delay: calc(300ms * 4);
+        animation-delay: ${props => props.style?.animationDelay};
     }
     &:nth-child(6) {
-        animation-delay: calc(300ms * 5);
+        animation-delay: ${props => props.style?.animationDelay};
     }
     &:nth-child(7) {
-        animation-delay: calc(300ms * 0);
+        animation-delay: ${props => props.style?.animationDelay};
     }
     &:nth-child(8) {
-        animation-delay: calc(300ms * 1);
+        animation-delay: ${props => props.style?.animationDelay};
     }
     &:nth-child(9) {
-        animation-delay: calc(300ms * 2);
+        animation-delay: ${props => props.style?.animationDelay};
     }
-    ${props => props.key};
     &:clear {
-        clear: both;
+        clear: ${props => props.style?.clear};
     }
 `
 

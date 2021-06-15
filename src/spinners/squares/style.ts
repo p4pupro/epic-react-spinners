@@ -38,7 +38,7 @@ const SquareSpinner = styled.div`
     align-items: center;
     justify-content: center;
     animation-name: ${squareSpinnerAnimation};
-    animation-duration: ${props => props.itemProp}s;
+    animation-duration: ${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite;
     transform: rotate(0deg);
     height: ${props => props.style?.height}px;
@@ -52,7 +52,7 @@ const Squares = styled.div`
     margin-left: auto;
     border: calc(65px * 0.04 / 1.3) solid ${props => props.style?.color};
     position: absolute;
-    animation-duration: ${props => props.itemProp}s;
+    animation-duration: ${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite;
 
     &:nth-child(1) {

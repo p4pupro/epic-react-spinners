@@ -84,8 +84,8 @@ const FlowerSpinner = styled.div`
 `
 
 const DotsContainer = styled.div`
-    height: calc(70px / 7);
-    width: calc(70px / 7);
+    height: calc(${props => props.style?.height}px / 7);
+    width: calc(${props => props.style?.width}px / 7);
 `
 
 const SmallerDots = styled.div`
@@ -94,7 +94,7 @@ const SmallerDots = styled.div`
     width: 100%;
     border-radius: 50%;
     animation-name: ${flowerSmallerDotSpinnerAnimation};
-    animation-duration: ${props => props.style?.animationDuration};
+    animation-duration: ${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite;  
 `
 
@@ -105,7 +105,7 @@ const BiggerDots = styled.div`
     padding: 10%;
     border-radius: 50%;
     animation-name: ${flowerBiggerDotSpinnerAnimation};
-    animation-duration: ${props => props.style?.animationDuration};
+    animation-duration: ${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite; 
 `
 

@@ -51,7 +51,7 @@ const TrinityCircle = styled.div`
         width: 60px;
         border-width: 3px;
         animation: ${trinitySpinnerAnimation1} infinite;
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear; 
     }
     &:nth-child(2) {
@@ -59,7 +59,7 @@ const TrinityCircle = styled.div`
         width: calc(60px * 0.65);
         animation: ${trinitySpinnerAnimation2} infinite;
         border-width: 2px;
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear;
     }
     &:nth-child(3) {
@@ -67,7 +67,7 @@ const TrinityCircle = styled.div`
         width: calc(60px * 0.1);
         animation: ${trinitySpinnerAnimation3} infinite;
         border-width: 1px;
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear;
     }
  

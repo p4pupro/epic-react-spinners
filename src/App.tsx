@@ -27,7 +27,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Atom color="#61dafb" size="70" animationDuration="2"></Atom>
+      <Atom color="#61dafb" size="70" animationDuration="1600"></Atom>
     </div>
     <div className="name">
       Atom Spinner
@@ -36,7 +36,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Orbit color="#61dafb" size="70" animationDuration="2"></Orbit>
+      <Orbit color="#61dafb" size="70" animationDuration="2000"></Orbit>
     </div>
     <div className="name">
       Orbit Spinner
@@ -45,7 +45,7 @@ function App() {
   
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Trinity color="#61dafb" size="70" animationDuration="2"></Trinity>
+      <Trinity color="#61dafb" size="70" animationDuration="2000"></Trinity>
     </div>
     <div className="name">
       Trinity Spinner
@@ -54,7 +54,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Electron color="#61dafb" size="70" animationDuration="2"></Electron>
+      <Electron color="#61dafb" size="70" animationDuration="1600"></Electron>
     </div>
     <div className="name">
       Electron Spinner
@@ -63,7 +63,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Square color="#61dafb" size="70" animationDuration="2"></Square>
+      <Square color="#61dafb" size="70" animationDuration="2000"></Square>
     </div>
     <div className="name">
       Squares Spinner
@@ -72,7 +72,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <SelfSquare color="#61dafb" size="70" animationDuration="1.4"/>
+      <SelfSquare color="#61dafb" size="70" animationDuration="1400"/>
     </div>
     <div className="name">
       SelfSquare Spinner
@@ -81,7 +81,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Flower color="#61dafb" size="70" animationDuration="2"/>
+      <Flower color="#61dafb" size="70" animationDuration="2000"/>
     </div>
     <div className="name">
       Flower Spinner
@@ -90,7 +90,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Rhombuses color="#61dafb" size="15" animationDuration="1.2"/>
+      <Rhombuses color="#61dafb" size="15" animationDuration="1200"/>
     </div>
     <div className="name">
       Rhombuses Spinner
@@ -100,7 +100,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <HalfCircle color="#61dafb" size="70" animationDuration="1.4"/>
+      <HalfCircle color="#61dafb" size="70" animationDuration="1400"/>
     </div>
     <div className="name">
      Half Circle Spinner
@@ -118,7 +118,7 @@ function App() {
 
   {/* <div className="spinner-holder">
     <div className="spinner-element">
-      <Radar color="#61dafb" size="70" animationDuration="1.2"/>
+      <Radar color="#61dafb" size="70" animationDuration="1200"/>
     </div>
     <div className="name">
       Radar Spinner

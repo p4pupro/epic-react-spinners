@@ -45,7 +45,7 @@ const OrbitLine = styled.div`
         top: 0;
         animation: ${orbitSpinnerAnimation1} infinite;
         border-bottom: 3px solid ${props => props.style?.color};
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear;
         
     }
@@ -54,7 +54,7 @@ const OrbitLine = styled.div`
         top: 0;
         animation: ${orbitSpinnerAnimation2} infinite;
         border-right: 3px solid ${props => props.style?.color};
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear; 
     }
     &:nth-child(3) {
@@ -62,7 +62,7 @@ const OrbitLine = styled.div`
         bottom: 0;
         animation: ${orbitSpinnerAnimation3} infinite;
         border-top: 3px solid ${props => props.style?.color};
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear; 
     }
  

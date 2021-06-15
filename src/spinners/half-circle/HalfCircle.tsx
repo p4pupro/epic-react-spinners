@@ -1,40 +1,31 @@
 import { Spinner } from '../../utils/interfaces/Spinner';
+import { defaulValues } from '../../utils/index';
 import { HalfCircleSpinner, Circle1, Circle2 } from './style';
 
 export const HalfCircle = (props: Spinner) => {
   const { color, size, animationDuration } = props;
 
-  const snipperStyle = (): object =>{
-    const len = size ? size : '70'
-    return {
-        width: `${len}px`,
-        height: `${len}px`,
-      };
-  }
   const circleStyle1 = (): object => {
-      const len = size ? parseInt(size) : 70;
-      const duration = animationDuration ? parseFloat(animationDuration) : 2;
-      const dur = duration * 1000;
+    const len = size ? parseInt(size) : defaulValues.sizeNumeric;
     return {
-      borderWidth: `${len / 10}px`,
-      animationDuration: `${dur.toString()}ms`,
-      borderTopColor: color
+      borderWidth: len / 10,
+      animationDuration: animationDuration || defaulValues.animationDuration,
+      borderTopColor: color || defaulValues.color
     };
   }
 
-  const circleStyle2 = (): object => {
-    const len = size ? parseInt(size) : 70;
-    const duration = animationDuration ? parseFloat(animationDuration) : 2;
-    const dur = duration * 1000;
+  const circleStyle2 = (): object => { 
+    const len = size ? parseInt(size) : defaulValues.sizeNumeric;
     return {
-      borderWidth: `${len / 10}px`,
-      animationDuration: `${dur.toString()}ms`,
-      borderBottomColor: color
+      borderWidth: len / 10,
+      animationDuration: animationDuration || defaulValues.animationDuration,
+      borderBottomColor : color || defaulValues.color
     };
   }
+
 
   return (
-    <HalfCircleSpinner style={snipperStyle()}>
+    <HalfCircleSpinner style={{ height: size || defaulValues.size, width: size || defaulValues.size }}>
         <Circle1 style={circleStyle1()} />
         <Circle2 style={circleStyle2()}/>
     </HalfCircleSpinner>

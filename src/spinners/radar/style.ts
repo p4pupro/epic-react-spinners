@@ -11,8 +11,8 @@ const radarSquareSpinnerAnimation = keyframes`
 `
 
 const RadarSpinner = styled.div`
-    height: ${props => props.style?.height};
-    width: ${props => props.style?.width};
+    height: ${props => props.style?.height}px;
+    width: ${props => props.style?.width}px;
     &: * {
         box-sizing: border-box;
     } 
@@ -25,10 +25,10 @@ const CircleSpinner = styled.div`
     top: 0;
     left: 0;
     animation-name: ${radarSquareSpinnerAnimation};
-    animation-duration: ${props => props.style?.animationDuration};
+    animation-duration: ${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite;
-    padding: ${props => props.style?.padding};
-    animation-delay: ${props => props.style?.animationDelay};
+    padding: ${props => props.style?.padding}px;
+    animation-delay: ${props => props.style?.animationDelay}ms;
     
     &:nth-child(1) {
         padding: calc(70px * 5 * 2 * 0 / 110);

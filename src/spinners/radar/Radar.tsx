@@ -1,5 +1,6 @@
 
 import { Spinner } from '../../utils/interfaces/Spinner';
+import { defaulValues } from '../../utils/index';
 import { RadarSpinner, CircleSpinner, CircleInner, CircleInnerContainer } from './style';
 
 export const Radar = (props: Spinner) => {
@@ -7,28 +8,19 @@ export const Radar = (props: Spinner) => {
   const { color, size, animationDuration } = props;
 
   const borderWidth = (): number => {
-    const len = size ? parseInt(size) : 70;
+    const len = size ? parseInt(size) : defaulValues.sizeNumeric;
     return len * 5 / 110;
-  }
-  const getSize = (): string => {
-    return  size ? size+'px' : '70px';
-  }
-
-  const circleStyle = (): string => {
-    const long = animationDuration ? parseFloat(animationDuration) : 1.2;
-    const longInMs = long * 1000;
-    return longInMs.toString() || '1200';
   }
 
   const circlesStyles = (): [] => {
     const circleStyles = [] as any;
-    const duration = animationDuration ? parseFloat(animationDuration) : 1200;
-    const delay = duration * 1000 * 0.15;
+    const duration = animationDuration ? parseFloat(animationDuration) : defaulValues.animationDurationNumeric;
+    const delay = duration * 0.15;
     for (let i = 0; i < circlesNum; i++) {
         circleStyles.push(Object.assign({
           padding: `${borderWidth() * 2 * i}px`,
           animationDelay: `${i === circlesNum - 1 ? 0 : delay}ms`,
-          animationDuration: `${circleStyle()}ms`
+          animationDuration: animationDuration || defaulValues.animationDuration
         }));
     }
     return circleStyles;
@@ -36,7 +28,7 @@ export const Radar = (props: Spinner) => {
 
 
   return (
-    <RadarSpinner style={{ height: getSize(), width: getSize() }}>
+    <RadarSpinner style={{ height: size || defaulValues.size, width: size || defaulValues.size }}>
         {
             circlesStyles().map((style: any, i: number) => {
               return (
@@ -47,8 +39,8 @@ export const Radar = (props: Spinner) => {
                     }}> 
                     <CircleInnerContainer style={{ borderWidth: borderWidth() }} >
                         <CircleInner style={{ 
-                          borderLeftColor: color, 
-                          borderRightColor: color, 
+                          borderLeftColor: color || defaulValues.color, 
+                          borderRightColor: color || defaulValues.color, 
                           borderWidth: borderWidth() 
                           }} />
                     </CircleInnerContainer>

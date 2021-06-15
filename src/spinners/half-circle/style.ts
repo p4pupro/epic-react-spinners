@@ -27,9 +27,10 @@ const Circle1 = styled.div`
     height: 100%;
     border-radius: 100%;
     border: calc(70px / 10) solid transparent;
+    border-width: ${props => props.style?.borderWidth}px;
     border-top-color: ${props => props.style?.borderTopColor};
     animation-name: ${halfCicleSpinnerAnimation};
-    animation-duration: 1s;
+    animation-duration:${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite;  
 `
 
@@ -40,9 +41,10 @@ const Circle2 = styled.div`
     height: 100%;
     border-radius: 100%;
     border: calc(70px / 10) solid transparent;
+    border-width: ${props => props.style?.borderWidth}px;
     border-bottom-color: ${props => props.style?.borderBottomColor};
     animation-name: ${halfCicleSpinnerAnimation};
-    animation-duration: 1s;
+    animation-duration:${props => props.style?.animationDuration}ms;
     animation-iteration-count: infinite;
     animation-direction: alternate; 
 `
