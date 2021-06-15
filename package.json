@@ -45,6 +45,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "yarn build:esm && yarn build:cjs",
+    "build:react": "react-scripts build",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "deploy": "gh-pages -d build",

@@ -1,6 +1,6 @@
-import React from 'react';
+
 import './App.scss';
-import { Atom, Orbit, Trinity, Electron, Square } from './spinners/index';
+import { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Rhombuses, Flower, HalfCircle, FingerPrint } from './spinners/index';
 
 
 function App() {
@@ -8,9 +8,9 @@ function App() {
     <>
     <div className="main-container">
   <div className="title-holder">
-    <h1 className="header">React Epic Spinners</h1>
+    <h1 className="header">Epic React Spinners</h1>
     <h5 className="sub-header">React Implementation of
-      <a className="link" href="http://epic-react-spinners.es/" target="_blank" rel="noreferrer"> Epic Spinners
+      <a className="link" href="https://epic-spinners.epicmax.co/" target="_blank" rel="noreferrer"> Epic Spinners
       </a>
     </h5>
 
@@ -28,7 +28,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Atom color="#61dafb" size="70" animationDuration="2"></Atom>
+      <Atom color="#61dafb" size="70" animationDuration="1600"></Atom>
     </div>
     <div className="name">
       Atom Spinner
@@ -37,7 +37,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Orbit color="#61dafb" size="70" animationDuration="2"></Orbit>
+      <Orbit color="#61dafb" size="70" animationDuration="2000"></Orbit>
     </div>
     <div className="name">
       Orbit Spinner
@@ -46,7 +46,7 @@ function App() {
   
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Trinity color="#61dafb" size="70" animationDuration="2"></Trinity>
+      <Trinity color="#61dafb" size="70" animationDuration="2000"></Trinity>
     </div>
     <div className="name">
       Trinity Spinner
@@ -55,7 +55,7 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Electron color="#61dafb" size="70" animationDuration="2"></Electron>
+      <Electron color="#61dafb" size="70" animationDuration="1600"></Electron>
     </div>
     <div className="name">
       Electron Spinner
@@ -64,12 +64,68 @@ function App() {
 
   <div className="spinner-holder">
     <div className="spinner-element">
-      <Square color="#61dafb" size="70" animationDuration="2"></Square>
+      <Square color="#61dafb" size="70" animationDuration="2000"></Square>
     </div>
     <div className="name">
       Squares Spinner
     </div>
   </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <SelfSquare color="#61dafb" size="70" animationDuration="1400"/>
+    </div>
+    <div className="name">
+      SelfSquare Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Flower color="#61dafb" size="70" animationDuration="2000"/>
+    </div>
+    <div className="name">
+      Flower Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <Rhombuses color="#61dafb" size="15" animationDuration="1200"/>
+    </div>
+    <div className="name">
+      Rhombuses Spinner
+    </div>
+  </div>
+  
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <HalfCircle color="#61dafb" size="70" animationDuration="1400"/>
+    </div>
+    <div className="name">
+     Half Circle Spinner
+    </div>
+  </div>
+
+  <div className="spinner-holder">
+    <div className="spinner-element">
+      <FingerPrint color="#61dafb" size="70" animationDuration="1400"/>
+    </div>
+    <div className="name">
+      FingerPrint Spinner
+    </div>
+  </div>
+
+  {/* <div className="spinner-holder">
+    <div className="spinner-element">
+      <Radar color="#61dafb" size="70" animationDuration="1200"/>
+    </div>
+    <div className="name">
+      Radar Spinner
+    </div>
+  </div> */}
+  
 
   </div>
 

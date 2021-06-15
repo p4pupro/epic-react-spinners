@@ -43,14 +43,12 @@ const SpinnerCircle = styled.div`
     transform: translate(-50%, -50%);
 `
 
-
-
 const SpinnerLine = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    animation-duration: ${props => props.itemProp}s;
+    animation-duration: ${props => props.style?.animationDuration}ms;
     border-left-width: calc(60px / 25);
     border-top-width: calc(60px / 25);
     border-left-color: ${props => props.style?.color};
@@ -60,19 +58,19 @@ const SpinnerLine = styled.div`
    
     &:nth-child(1) {
         animation: ${atomSpinnerAnimation1} infinite;
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear;
         transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);  
     }
     &:nth-child(2) {
         animation: ${atomSpinnerAnimation2} infinite;
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear;
         transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);  
     }
     &:nth-child(3) {
         animation: ${atomSpinnerAnimation3} infinite;
-        animation-duration: ${props => props.itemProp}s;
+        animation-duration: ${props => props.style?.animationDuration}ms;
         animation-timing-function: linear;
         transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);  
     }

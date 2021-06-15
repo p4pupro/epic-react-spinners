@@ -1,0 +1,1 @@
+export type Clear = 'both' | 'inherit'; 
