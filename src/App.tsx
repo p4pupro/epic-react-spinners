@@ -97,7 +97,6 @@ function App() {
     </div>
   </div>
   
-
   <div className="spinner-holder">
     <div className="spinner-element">
       <HalfCircle color="#61dafb" size="70" animationDuration="1400"/>
