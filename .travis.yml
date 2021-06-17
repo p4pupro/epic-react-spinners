@@ -1,3 +1,21 @@
 language: node_js
 node_js:
-- '8'
+- '14.16.0'
+
+install:
+  - yarn install
+
+script:
+  - npm run test
+  - npm run build 
+  - npm publish
+  - npm run build:react
+  - npm run deploy
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: gh-pages  
+  
