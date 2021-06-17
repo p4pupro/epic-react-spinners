@@ -51,7 +51,6 @@ export const SelfSquare = (props: Spinner) => {
     <SquareSpinner style={{ height: size || defaulValues.size, width: size || defaulValues.size, top: initialTopPosition() }}>
         {
             squaresStyles().map((style: any, i: React.Key | null | undefined) => {
-              console.log(style);
                 return <Squares key={i} style={{ 
                   background: color || defaulValues.color, 
                   animationDuration: style.animationDuration, 
