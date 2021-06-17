@@ -16,6 +16,8 @@ deploy:
   - provider: npm
     email: "p4pupro@gmail.com"
     api_key: "a7f2828b-41ad-4846-b9bb-da999e491b13"
+    on:
+      branch: npm
 
   - provider: pages
     skip-cleanup: true
