@@ -19,10 +19,11 @@ deploy:
     on:
       branch: npm
 
-  - provider: pages:git
-    token: $GITHUB_TOKEN
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    keep_history: true
+    local_dir: build
     edge: true
     on:
       branch: gh-pages
-
-      
