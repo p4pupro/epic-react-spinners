@@ -9,7 +9,8 @@ install:
 #   - npm run test
 #   - npm run build:react
 #   - npm run deploy
-
+before_script:
+- npm install -g npm@'>=3'
 
 stages:
  - test
