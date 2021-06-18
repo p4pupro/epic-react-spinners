@@ -8,12 +8,12 @@ install:
 before_script:
 - npm install -g npm@'>=7'
 
-after_success:
-  - git config --global user.name "p4pupro"
-  - git config --global user.email "domingoperezguerrero@gmail.com"
-  - git remote rm origin
-  - git remote add origin https://p4pupro:${GITHUB_TOKEN}@github.com/p4pupro/epic-react-spinners.git
-  - npm run deploy
+# after_success:
+#   - git config --global user.name "p4pupro"
+#   - git config --global user.email "domingoperezguerrero@gmail.com"
+#   - git remote rm origin
+#   - git remote add origin https://p4pupro:$GITHUB_TOKEN@github.com/p4pupro/epic-react-spinners.git
+#   - npm run deploy
 
 stages:
  - test
@@ -51,11 +51,11 @@ jobs:
        - npm run build:react
        - echo "GH PAGES Building Finished."
 
-    #  deploy:
-    #   - provider: pages
-    #     skip_cleanup: true
-    #     github_token: $GITHUB_TOKEN
-    #     keep_history: true
-    #     local_dir: build
-    #     on:
-    #       branch: npm
+     deploy:
+      - provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        local_dir: /build
+        on:
+          branch: npm
