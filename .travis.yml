@@ -12,6 +12,9 @@ script:
   - npm run build:react
   - npm run deploy
 
+before_install:
+  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+  
 deploy:
   - provider: npm
     edge:
