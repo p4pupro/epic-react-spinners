@@ -80,6 +80,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "http://registry.npmjs.org/epic-react-spinners"
+    "registry": "http://registry.npmjs.org/"
   }
 }
