@@ -5,32 +5,46 @@ node_js:
 install:
   - yarn install
 
-script:
-  - npm run test
-  - npm run build 
-  - npm publish
-  - npm run build:react
-  - npm run deploy
+# script:
+#   - npm run test
+#   - npm run build:react
+#   - npm run deploy
 
-before_install:
-  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-  
-deploy:
-  - provider: npm
-    edge:
-      branch: npm
-    email: $NPM_EMAIL_ADDRESS
-    api_key: $NPM_TOKEN
-    registry: https://npm.pkg.github.com
-    on:
-      branch: npm
-      repo: p4pupro/epic-react-spinners
 
-  - provider: pages
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN
-    keep_history: true
-    local_dir: build
-    edge: true
-    on:
-      branch: gh-pages
+stages:
+ - test
+ - name: deploy
+ 
+jobs:
+ include:
+   - stage: test
+     script:
+       - node --version
+       - npm --version
+       - echo "Testing Started ..."
+       - npm run test
+       - echo "Testing Finished."
+
+   - stage: deploy
+     script:
+       - echo "NPM Deploying Started ..."
+       - npm version
+       - npm run build 
+       - echo "NPM Building Finished."
+
+     deploy:
+       provider: npm
+       email: $NPM_EMAIL_ADDRESS
+       api_key: "$NPM_TOKEN"
+       skip_cleanup: true
+       on:
+         branch: npm
+
+  # - provider: pages
+  #   skip_cleanup: true
+  #   github_token: $GITHUB_TOKEN
+  #   keep_history: true
+  #   local_dir: build
+  #   edge: true
+  #   on:
+  #     branch: gh-pages

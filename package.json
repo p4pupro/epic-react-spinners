@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/p4pupro/epic-react-spinners"
   },
+  "bugs": {
+    "url": "https://github.com/p4pupro/epic-react-spinners/issues"
+  },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
