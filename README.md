@@ -24,10 +24,6 @@ Import each spinners' into your file/component and use the spinner component any
 import React from 'react';
 import './App.scss';
 import {Atom, Orbit, Trinity, Electron, Square, SelfSquare, Rhombuses, Flower, HalfCircle, FingerPrint} from 'epic-react-spinners';
-<<<<<<< HEAD
-
-=======
->>>>>>> npm
 
 function App() {
   return (
