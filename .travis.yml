@@ -42,7 +42,6 @@ jobs:
      script:
        - echo "GH PAGES Deploying Started ..."
        - npm run build:react
-       - npm run deploy
        - echo "GH PAGES Building Finished."
 
      deploy:
