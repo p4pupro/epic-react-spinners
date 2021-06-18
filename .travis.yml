@@ -9,6 +9,7 @@ install:
 before_script:
 - npm install -g npm@'>=7'
 
+
 # after_success:
 #   - git config --global user.name "p4pupro"
 #   - git config --global user.email "domingoperezguerrero@gmail.com"
@@ -35,7 +36,8 @@ jobs:
      script:
        - echo "NPM Deploying Started ..."
        - npm version
-       - npm run build 
+       - npm run build
+       - cd lib 
        - echo "NPM Building Finished."
 
      deploy:
