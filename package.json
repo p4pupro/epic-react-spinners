@@ -80,6 +80,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com/p4pupro"
+    "registry": "https://npm.pkg.github.com/@OWNER"
   }
 }
