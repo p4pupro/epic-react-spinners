@@ -5,16 +5,13 @@ node_js:
 install:
   - yarn install
 
-# script:
-#   - npm run test
-#   - npm run build:react
-#   - npm run deploy
 before_script:
-- npm install -g npm@'>=3'
+- npm install -g npm@'>=7'
 
 stages:
  - test
  - name: deploy
+ - ghpages
  
 jobs:
  include:
@@ -41,11 +38,17 @@ jobs:
        on:
          branch: npm
 
-  # - provider: pages
-  #   skip_cleanup: true
-  #   github_token: $GITHUB_TOKEN
-  #   keep_history: true
-  #   local_dir: build
-  #   edge: true
-  #   on:
-  #     branch: gh-pages
+   - stage: ghpages
+     script:
+       - echo "GH PAGES Deploying Started ..."
+       - npm run build:react
+       - npm run deploy
+       - echo "GH PAGES Building Finished."
+
+     deploy:
+      - provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        edge: true
+        on:
+          branch: gh-pages
