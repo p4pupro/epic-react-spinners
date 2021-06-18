@@ -2,6 +2,7 @@
 import './App.scss';
 import { Atom, Orbit, Trinity, Electron, Square, SelfSquare, Rhombuses, Flower, HalfCircle, FingerPrint } from './spinners/index';
 
+
 function App() {
   return (
     <>

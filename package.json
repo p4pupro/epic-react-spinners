@@ -1,7 +1,7 @@
 {
   "name": "epic-react-spinners",
   "description": "React implementation of epic spinners",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "private": false,
   "keywords": [
     "React",
@@ -14,6 +14,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/p4pupro/epic-react-spinners"
+  },
+  "bugs": {
+    "url": "https://github.com/p4pupro/epic-react-spinners/issues"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -77,5 +80,8 @@
   },
   "resolutions": {
     "@types/react": "^17.0.11"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
