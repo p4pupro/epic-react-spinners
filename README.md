@@ -1,6 +1,5 @@
 # Epic React Spinners
 
----
 [![Build Status](https://travis-ci.com/p4pupro/epic-react-spinners.svg?branch=master)](https://travis-ci.com/p4pupro/epic-react-spinners)
 [![dependencies Status](https://status.david-dm.org/gh/p4pupro/epic-react-spinners.svg)](https://status.david-dm.org/gh/p4pupro/epic-react-spinners)
 
