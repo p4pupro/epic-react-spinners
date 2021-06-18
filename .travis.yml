@@ -48,6 +48,6 @@ jobs:
       - provider: pages
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
-        edge: true
+        keep_history: true
         on:
-          branch: gh-pages
+          branch: npm
