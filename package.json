@@ -80,6 +80,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "http://registry.npmjs.org/"
   }
 }
