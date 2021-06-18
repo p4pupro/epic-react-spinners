@@ -4,11 +4,12 @@ node_js:
 
 install:
   - yarn install
-  - npm set registry https://registry.npmjs.org/
 
 before_script:
 - npm install -g npm@'>=7'
 
+before_install:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 
 # after_success:
 #   - git config --global user.name "p4pupro"
