@@ -7,8 +7,7 @@ install:
 
 script:
   - npm run test
-  - npm run build
-  - npm set registry https://registry.npmjs.org/ 
+  - npm run build 
   - npm publish
   - npm run build:react
   - npm run deploy
@@ -17,6 +16,7 @@ deploy:
   - provider: npm
     email: $NPM_EMAIL_ADDRESS
     api_key: $NPM_TOKEN
+    github_token: $GITHUB_TOKEN
     on:
       branch: npm
 
