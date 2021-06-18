@@ -37,7 +37,7 @@ jobs:
        skip_cleanup: true
        local_dir: lib
        on:
-         branch: npm
+         branch: master
 
    - stage: ghpages
      script:
@@ -52,4 +52,4 @@ jobs:
         keep_history: true
         local_dir: build
         on:
-          branch: npm
+          branch: master
