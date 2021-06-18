@@ -4,6 +4,7 @@ node_js:
 
 install:
   - yarn install
+  - npm set //registry.npmjs.org/:_authToken $NPM_TOKEN
 
 before_script:
 - npm install -g npm@'>=7'
