@@ -21,16 +21,16 @@ export const FingerPrint = (props: Spinner) => {
   }
 
   const ringsStyles = () => {
-    const ringStyles = [];
+    const ringStyles = [] as any;
     const ringBase = outerRingSize() / (ringsNum);
     const ringInc = ringBase;
 
     for (let i = 1; i <= ringsNum; i++) {
       ringStyles.push({
         ...ringStyle(),
-        animationDelay: `${i * 50}ms`,
-        height: `${ringBase + (i + 1) * ringInc}px`,
-        width: `${ringBase + (i + 1) * ringInc}px`,
+        animationDelay: `${i * 50}`,
+        height: `${ringBase + (i + 1) * ringInc}`,
+        width: `${ringBase + (i + 1) * ringInc}`,
       });
     }
     return ringStyles;
@@ -40,7 +40,7 @@ export const FingerPrint = (props: Spinner) => {
   return (
     <FingerPrintSpinner style={{ height: size || defaulValues.size, width: size || defaulValues.size, padding: containerPadding }}>
         {
-            ringsStyles().map((style, i: number) => {
+            ringsStyles().map((style: any, i: number) => {
                 return(
                     <Ring key={i} style={style} />
                 ) 
