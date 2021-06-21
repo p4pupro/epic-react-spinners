@@ -24,6 +24,8 @@ jobs:
        - echo "Testing Finished."
 
    - stage: deploy
+     # require the branch name to be npm
+     if: branch = npm
      script:
        - echo "NPM Deploying Started ..."
        - npm version
@@ -40,6 +42,8 @@ jobs:
          branch: npm
 
    - stage: ghpages
+     # require the branch name to be develop
+     if: branch = develop
      script:
        - echo "GH PAGES Deploying Started ..."
        - npm run build:react
