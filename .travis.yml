@@ -29,7 +29,7 @@ jobs:
      script:
        - echo "NPM Deploying Started ..."
        - npm version
-       - npm run build
+       - npm run build:tsc
        - echo "NPM Building Finished."
 
      deploy:
